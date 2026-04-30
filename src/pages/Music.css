@@ -1,0 +1,209 @@
+.page-hero-desc {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.music-featured {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.music-art-large {
+  position: relative;
+}
+
+.art-bg {
+  aspect-ratio: 1;
+  border-radius: var(--radius-lg);
+  background: url("/Images/not-that-evident.png") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+}
+
+.art-number {
+  font-size: 4rem;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.art-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--cream);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--gold);
+  color: var(--soil-dark);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+}
+
+.release-type {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.music-featured-info h2 {
+  margin-bottom: 0.5rem;
+}
+
+.release-date {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem !important;
+}
+
+.release-desc {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.releases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.release-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.release-art {
+  position: relative;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--soil-mid), var(--brown-warm));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.release-art-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.release-art-inner {
+  text-align: center;
+}
+
+.release-art-icon {
+  display: block;
+  font-size: 2rem;
+  color: var(--gold-muted);
+  margin-bottom: 0.4rem;
+}
+
+.release-art-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--cream-dark);
+}
+
+.release-featured-dot {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--gold);
+  color: var(--soil-dark);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2rem;
+}
+
+.release-info {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.release-type-small {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+  display: block;
+}
+
+.release-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.release-date-small {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem !important;
+}
+
+.release-desc-short {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem !important;
+  flex: 1;
+}
+
+.add-content-hint {
+  background: rgba(201, 168, 76, 0.05);
+  border: 1px dashed rgba(201, 168, 76, 0.25);
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+}
+
+.add-content-hint p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.add-content-hint code {
+  font-family: "Courier New", monospace;
+  background: rgba(201, 168, 76, 0.15);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  color: var(--gold-light);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 768px) {
+  .music-featured {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .art-bg {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
