@@ -25,7 +25,9 @@ export default function Devotion() {
             <div className="devotion-featured-card card">
               <div className="dev-featured-meta">
                 <span className="dev-category">{devotionals[0].category}</span>
-                <span className="dev-read-time">{devotionals[0].readTime} read</span>
+                <span className="dev-read-time">
+                  {devotionals[0].readTime} read
+                </span>
               </div>
               <h2 className="dev-featured-title">{devotionals[0].title}</h2>
               <div className="dev-scripture">
@@ -34,7 +36,9 @@ export default function Devotion() {
               </div>
               <p className="dev-featured-excerpt">{devotionals[0].excerpt}</p>
               <div className="dev-actions">
-                <button className="btn btn-primary">Read Full Reflection</button>
+                <button className="btn btn-primary">
+                  Read Full Reflection
+                </button>
                 {devotionals[0].relatedSong && (
                   <span className="dev-related">
                     Related: <em>{devotionals[0].relatedSong}</em>
@@ -53,7 +57,9 @@ export default function Devotion() {
                   <article key={post.id} className="dev-card card">
                     <div className="dev-card-meta">
                       <span className="dev-category">{post.category}</span>
-                      <span className="dev-read-time">{post.readTime} read</span>
+                      <span className="dev-read-time">
+                        {post.readTime} read
+                      </span>
                     </div>
                     <h3 className="dev-card-title">{post.title}</h3>
                     <div className="dev-scripture-small">
@@ -64,7 +70,9 @@ export default function Devotion() {
                     <div className="dev-card-footer">
                       <span className="dev-date">
                         {formatLocalDate(post.date, {
-                          year: "numeric", month: "long", day: "numeric",
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
                         })}
                       </span>
                       <button className="btn btn-ghost">Read More →</button>
@@ -85,9 +93,9 @@ export default function Devotion() {
                 <h4>Scripture Focus</h4>
                 <div className="scripture-block">
                   <p>
-                    "But the seed on good soil stands for those with a noble
-                    and good heart, who hear the word, retain it, and by
-                    persevering produce a crop."
+                    "But the seed on good soil stands for those with a noble and
+                    good heart, who hear the word, retain it, and by persevering
+                    produce a crop."
                   </p>
                   <cite>Luke 8:15</cite>
                 </div>

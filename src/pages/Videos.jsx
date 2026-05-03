@@ -22,7 +22,8 @@ export default function Videos() {
           <h1>Videos</h1>
           <div className="divider divider-center" />
           <p className="page-hero-desc">
-            Episodes, lyric videos, devotionals, and behind-the-scenes — the full visual story.
+            Episodes, lyric videos, devotionals, and behind-the-scenes — the
+            full visual story.
           </p>
         </div>
       </section>
@@ -38,7 +39,9 @@ export default function Videos() {
                 <h2>{featured.title}</h2>
                 <p className="fv-date">
                   {formatLocalDate(featured.date, {
-                    year: "numeric", month: "long", day: "numeric",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
                   })}
                 </p>
                 <p>{featured.description}</p>
@@ -72,7 +75,9 @@ export default function Videos() {
                   <h4>{video.title}</h4>
                   <p className="video-date">
                     {formatLocalDate(video.date, {
-                      year: "numeric", month: "short", day: "numeric",
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
                     })}
                   </p>
                   <p className="video-desc">{video.description}</p>

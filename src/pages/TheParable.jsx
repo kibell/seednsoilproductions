@@ -12,10 +12,17 @@ export default function TheParable() {
           <h1>The Parable</h1>
           <div className="divider divider-center" />
           <p className="page-hero-desc parable-hero-desc">
-            A multi-episode series exploring the Parable of the Sower — and
-            what it means for our calling, our hearts, and our lives.
+            A multi-episode series exploring the Parable of the Sower — and what
+            it means for our calling, our hearts, and our lives.
           </p>
-          <div className="scripture-block" style={{ maxWidth: "600px", margin: "2rem auto 0", textAlign: "left" }}>
+          <div
+            className="scripture-block"
+            style={{
+              maxWidth: "600px",
+              margin: "2rem auto 0",
+              textAlign: "left",
+            }}
+          >
             <p>
               "Listen! A farmer went out to sow his seed... Still other seed
               fell on good soil. It came up and yielded a crop, a hundred times
@@ -36,8 +43,8 @@ export default function TheParable() {
               <div className="divider" />
               <p>
                 The Parable is a creative project built around one of the most
-                important stories Jesus ever told — the Parable of the Sower.
-                In it, a farmer scatters seed on four different types of ground:
+                important stories Jesus ever told — the Parable of the Sower. In
+                it, a farmer scatters seed on four different types of ground:
                 the path, rocky soil, thorny ground, and good soil.
               </p>
               <p style={{ marginTop: "1rem" }}>
@@ -54,10 +61,26 @@ export default function TheParable() {
             </div>
             <div className="soil-types">
               {[
-                { type: "The Path", desc: "The word is heard but not received — stolen before it can take root.", icon: "⬜" },
-                { type: "Rocky Ground", desc: "The word brings joy, but shallow roots can't survive the heat.", icon: "🪨" },
-                { type: "Thorny Ground", desc: "Worries, wealth, and distraction choke out what was growing.", icon: "🌿" },
-                { type: "Good Soil", desc: "The word is received, understood, and bears fruit — thirty, sixty, a hundredfold.", icon: "🌱" },
+                {
+                  type: "The Path",
+                  desc: "The word is heard but not received — stolen before it can take root.",
+                  icon: "⬜",
+                },
+                {
+                  type: "Rocky Ground",
+                  desc: "The word brings joy, but shallow roots can't survive the heat.",
+                  icon: "🪨",
+                },
+                {
+                  type: "Thorny Ground",
+                  desc: "Worries, wealth, and distraction choke out what was growing.",
+                  icon: "🌿",
+                },
+                {
+                  type: "Good Soil",
+                  desc: "The word is received, understood, and bears fruit — thirty, sixty, a hundredfold.",
+                  icon: "🌱",
+                },
               ].map((soil) => (
                 <div key={soil.type} className="soil-card">
                   <span className="soil-icon">{soil.icon}</span>
@@ -98,7 +121,8 @@ export default function TheParable() {
                   {ep.releaseDate && ep.status !== "coming-soon" && (
                     <span className="ep-date">
                       {formatLocalDate(ep.releaseDate, {
-                        year: "numeric", month: "long",
+                        year: "numeric",
+                        month: "long",
                       })}
                     </span>
                   )}
@@ -116,7 +140,10 @@ export default function TheParable() {
                       </div>
                     )}
 
-                    <div className="scripture-block" style={{ marginTop: "1.5rem" }}>
+                    <div
+                      className="scripture-block"
+                      style={{ marginTop: "1.5rem" }}
+                    >
                       <p>{ep.scripture}</p>
                       <cite>{ep.scriptureRef}</cite>
                     </div>
@@ -133,7 +160,9 @@ export default function TheParable() {
                         <h4>Themes</h4>
                         <div className="theme-tags">
                           {ep.themes.map((t) => (
-                            <span key={t} className="theme-tag">{t}</span>
+                            <span key={t} className="theme-tag">
+                              {t}
+                            </span>
                           ))}
                         </div>
                       </div>
@@ -154,7 +183,9 @@ export default function TheParable() {
                       <div className="ep-songs">
                         <h4>Related Songs</h4>
                         {ep.songs.map((s) => (
-                          <span key={s} className="theme-tag">{s}</span>
+                          <span key={s} className="theme-tag">
+                            {s}
+                          </span>
                         ))}
                       </div>
                     )}
