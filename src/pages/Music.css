@@ -19,7 +19,7 @@
 .art-bg {
   aspect-ratio: 1;
   border-radius: var(--radius-lg);
-  background: url("/Images/good-ground.png") center/cover no-repeat;
+  background: url("/Images/good-ground.png") center/contain no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@
 .release-art-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
