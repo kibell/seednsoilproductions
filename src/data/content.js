@@ -26,7 +26,7 @@ export const songs = [
     coverArt: "./Images/not-that-evident.png",
     description:
       "A reflection on unseen growth. Not everything that’s planted shows up right away.This song captures the tension between doubt and faith—the moments where progress feels invisible, yet something deeper is still happening. Part of The Parable — a story told through music and visuals.",
-    featured: true,
+    featured: false,
     streamingLinks: {
       spotify:
         "https://distrokid.com/hyperfollow/echogod/not-that-evident-feat-sapphira",
@@ -37,13 +37,13 @@ export const songs = [
   },
   {
     id: "002",
-    title: "good ground (unreleased)",
+    title: "good ground",
     subtitle: "Single",
     releaseDate: "2026-05-08",
-    coverArt: "",
+    coverArt: "./Images/good-ground.png",
     description:
-      "A reflection on unseen growth. Not everything that’s planted shows up right away. This song captures the tension between doubt and faith—the moments where progress feels invisible, yet something deeper is still happening. Part of The Parable — a story told through music and visuals.",
-    featured: false,
+      "What type of soil are you when it comes to the seed that good in growing in your heart? Part of The Parable — a story told through music and visuals.",
+    featured: true,
     streamingLinks: {
       spotify:
         "https://distrokid.com/hyperfollow/echogod/good-ground-feat-sapphira",
@@ -188,8 +188,21 @@ export const videos = [
     categoryLabel: "Episode",
     description: "The Parable, Episode 2: The Parable of the Sower",
     date: "2026-04-30",
+    featured: false,
+    
+  },
+
+   {
+    id: "ep03",
+    title: "The Parable — Episode 3: The Parable of the Prodigal Son",
+    embedId: "DAt_6xFVGls", // Replace with real YouTube video ID
+    category: "episode",
+    categoryLabel: "Episode",
+    description: "The Parable, Episode 3: The Parable of the Prodigal Son",
+    date: "2026-05-07",
     featured: true,
   },
+
   {
     id: "v003",
     title: "not that evident. — Lyric Video",
@@ -199,6 +212,19 @@ export const videos = [
     description:
       "Official lyric video for not that evident., highlighting the full message and lyrics.",
     date: "2026-05-01",
+    featured: false,
+  },
+
+  
+  {
+    id: "v004",
+    title: "good ground. — Lyric Video",
+    embedId: "QCIxw6YjOPk", // Replace with lyric video YouTube video ID
+    category: "lyric-video",
+    categoryLabel: "Lyric Video",
+    description:
+      "Official lyric video for good ground., highlighting the full message and lyrics.",
+    date: "2026-05-08",
     featured: false,
   },
 ];

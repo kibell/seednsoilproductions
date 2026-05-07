@@ -236,7 +236,7 @@
 .art-placeholder {
   aspect-ratio: 1;
   border-radius: var(--radius-lg);
-  background: url("/Images/not-that-evident.png") center/cover no-repeat;
+  background: url("/Images/good-ground.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;

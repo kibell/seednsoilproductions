@@ -19,7 +19,7 @@
 .art-bg {
   aspect-ratio: 1;
   border-radius: var(--radius-lg);
-  background: url("/Images/not-that-evident.png") center/cover no-repeat;
+  background: url("/Images/good-ground.png") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
