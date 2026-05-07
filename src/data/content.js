@@ -189,10 +189,9 @@ export const videos = [
     description: "The Parable, Episode 2: The Parable of the Sower",
     date: "2026-04-30",
     featured: false,
-    
   },
 
-   {
+  {
     id: "ep03",
     title: "The Parable — Episode 3: The Parable of the Prodigal Son",
     embedId: "DAt_6xFVGls", // Replace with real YouTube video ID
@@ -215,7 +214,6 @@ export const videos = [
     featured: false,
   },
 
-  
   {
     id: "v004",
     title: "good ground. — Lyric Video",
@@ -282,6 +280,29 @@ export const episodes = [
     ],
     themes: ["Growth", "Distraction", "Spiritual Depth", "Transformation"],
     songs: ["Good Ground"],
+  },
+
+  {
+    id: "ep3",
+    number: "03",
+    title: "The Parable of the Prodigal Son",
+    subtitle: "A Story of Redemption and Grace",
+    status: "available",
+    releaseDate: "2026-04-30",
+    embedId: "DAt_6xFVGls",
+    scriptureRef: "Luke 15:11–32",
+    scripture:
+      "There was a man who had two sons. The younger one said to his father, 'Father, give me my share of the estate.' So he divided his property between them.",
+    summary:
+      "Episode 3 explores the themes of redemption and grace through the story of the Prodigal Son. Echo reflects on moments of brokenness and the transformative power of forgiveness. This episode challenges us to consider how we respond to God's grace and extend it to others.",
+    reflectionQuestions: [
+      "How have you experienced God's grace in your life?",
+      "Are there areas where you need to extend forgiveness to others?",
+      "What steps can you take to embrace God's grace more fully in your daily life?",
+      "What would it look like to intentionally create space for God’s word to take root?",
+    ],
+    themes: ["Redemption", "Grace", "Forgiveness", "Transformation"],
+    songs: ["you found me"],
   },
 ];
 
